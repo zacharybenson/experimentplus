@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.urls import re_path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('xp/', include('apps.api_xp.urls')),
 
     # frontend urls
-    #re_path(".*", TemplateView.as_view(template_name="index.html")),
+    re_path(".*", TemplateView.as_view(template_name="index.html")),
 ]
