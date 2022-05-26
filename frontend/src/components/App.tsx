@@ -17,21 +17,19 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <pre>django-react-docker-heroku-template</pre>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+        <br></br>
+        <h1>Experiment +</h1>
         <img src={logo} className="App-logo" alt="logo"/>
-
         <div>
-          <p>Test connection with API:</p>
-          <label htmlFor="char-input">Make this text uppercase: </label>
-          <input
-            id="char-input" type="text" value={textInput}
-            onChange={(e) => setTextInput(e.target.value)}
-          />
-          <button onClick={handleSubmit}>Submit</button>
-          <h3>{output}</h3>
+          <p>Rapidly Design, Build, and Conduct Experiments</p>
+        </div>
+        <br></br>
+        <div>
+        <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" alt=""/>
+        <img src="https://img.shields.io/badge/Docker-008FCC?style=for-the-badge&logo=docker&logoColor=white" alt=""/>
+        <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt=""/>
+        <img src="https://img.shields.io/badge/django%20rest-ff1709?style=for-the-badge&logo=django&logoColor=white" alt=""/>
+        <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt=""/>
         </div>
       </header>
     </div>

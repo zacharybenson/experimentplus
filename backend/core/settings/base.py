@@ -40,10 +40,8 @@ INSTALLED_APPS = [
     # rest framework
     'rest_framework',
     'rest_framework.authtoken',
-    # apps
-    'api',
-    'users',
-    'core',
+    #Apps
+    'apps.api_xp.apps.ApiXpConfig',
 ]
 
 MIDDLEWARE = [
@@ -81,26 +79,29 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 # Github actions database
-if os.environ.get('GITHUB_WORKFLOW'):
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'github_actions',
-            'USER': 'postgres',
-            'PASSWORD': 'postgres',
-            'HOST': '127.0.0.1',
-            'PORT': '5432',
-        }
+# if os.environ.get('GITHUB_WORKFLOW'):
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql',
+#             'NAME': 'github_actions',
+#             'USER': 'postgres',
+#             'PASSWORD': 'postgres',
+#             'HOST': 'db',
+#             'PORT': '5432',
+#         }
+#     }
+# Local database if not using Docker for development
+# else:
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'expdb',
+        'USER': 'xp_api',
+        'PASSWORD': 'PsK72XwM5m6ggFbfmvnNzo2up!LkfhTfvb$d1aM0RGEmfj9H41TlQ7etzCKQE$oAfj*ef1b9y2NNuCrqO6$2g27x8DE3O^w#mlt',
+        'HOST': 'db',
+        'PORT': '5432',
     }
-# SQLite database if not using Docker for development
-else:
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": os.path.join(BASE_DIR.parent, "db.sqlite3"),
-        }
-    }
-
+}
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 AUTH_PASSWORD_VALIDATORS = [
@@ -123,7 +124,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Europe/Warsaw'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
