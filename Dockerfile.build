@@ -23,11 +23,11 @@ COPY ./backend/scripts/ /app/
 # Install frontend dependencies
 WORKDIR /app/frontend
 
-COPY ./frontend/package.json ./frontend/yarn.lock /app/frontend/
+COPY ./frontend/package.json /app/frontend/
 RUN npm install
 
 # Add the rest of the code
-COPY ./frontend /app/frontend
+COPY ./frontend ./frontend/yarn.lock  /app/frontend
 
 # Build react static files
 RUN npm run build
