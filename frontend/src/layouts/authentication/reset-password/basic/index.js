@@ -37,12 +37,6 @@ function Basic() {
   return (
     <PageLayout background="light">
       <DefaultNavbar
-        routes={pageRoutes}
-        action={{
-          type: "external",
-          route: "https://creative-tim.com/product/soft-ui-dashboard-pro-react",
-          label: "buy now",
-        }}
       />
       <Grid container spacing={3} justifyContent="center" sx={{ minHeight: "75vh" }}>
         <Grid item xs={10} md={6} lg={4}>

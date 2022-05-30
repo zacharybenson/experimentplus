@@ -27,7 +27,6 @@ import SuiTypography from "components/SuiTypography";
 import SuiInput from "components/SuiInput";
 import SuiSelect from "components/SuiSelect";
 import SuiDatePicker from "components/SuiDatePicker";
-import SuiEditor from "components/SuiEditor";
 import SuiDropzone from "components/SuiDropzone";
 import SuiButton from "components/SuiButton";
 
@@ -120,7 +119,6 @@ function NewProject() {
                       This is how others will learn about the project, so make it good!
                     </SuiTypography>
                   </SuiBox>
-                  <SuiEditor value={editorValue} onChange={setEditorValue} />
                 </SuiBox>
 
                 <SuiBox

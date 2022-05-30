@@ -33,7 +33,6 @@ import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 import MasterCard from "examples/Cards/MasterCard";
 import MiniInfoCard from "examples/Cards/InfoCards/MiniInfoCard";
 import ControllerCard from "examples/Cards/ControllerCard";
-import Calendar from "examples/Calendar";
 import CategoriesList from "examples/Lists/CategoriesList";
 
 // Widgets page components
@@ -46,7 +45,7 @@ import Chart from "layouts/pages/widgets/components/Chart";
 
 // Data
 import progressLineChartData from "layouts/pages/widgets/data/progressLineChartData";
-import calendarEventsData from "layouts/pages/widgets/data/calendarEventsData";
+
 import categoriesListData from "layouts/pages/widgets/data/categoriesListData";
 import incomeChartData from "layouts/pages/widgets/data/incomeChartData";
 import caloriesChartData from "layouts/pages/widgets/data/caloriesChartData";
@@ -169,20 +168,7 @@ function Widgets() {
         </SuiBox>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={5}>
-            {useMemo(
-              () => (
-                <Calendar
-                  header={{ title: "calendar", date: "Monday, 2021" }}
-                  headerToolbar={false}
-                  initialView="dayGridMonth"
-                  initialDate="2021-08-10"
-                  events={calendarEventsData}
-                  selectable
-                  editable
-                />
-              ),
-              [calendarEventsData]
-            )}
+
           </Grid>
           <Grid item xs={12} lg={3}>
             <SuiBox mb={3}>

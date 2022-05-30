@@ -29,7 +29,7 @@ import MiniStatisticsCard from "examples/Cards/StatisticsCards/MiniStatisticsCar
 import SalesTable from "examples/Tables/SalesTable";
 import ReportsBarChart from "examples/Charts/BarCharts/ReportsBarChart";
 import GradientLineChart from "examples/Charts/LineCharts/GradientLineChart";
-import Globe from "examples/Globe";
+
 
 // Soft UI Dashboard PRO React base styles
 import typography from "assets/theme/base/typography";
@@ -60,20 +60,6 @@ function Default() {
                 general statistics
               </SuiTypography>
             </SuiBox>
-
-            <Grid container>
-              <Grid item xs={12}>
-                <Globe
-                  display={{ xs: "none", md: "block" }}
-                  position="absolute"
-                  top="10%"
-                  right={0}
-                  mt={{ xs: -12, lg: 1 }}
-                  mr={{ xs: 0, lg: 10 }}
-                  canvasStyle={{ marginTop: "3rem" }}
-                />
-              </Grid>
-            </Grid>
 
             <Grid container spacing={3}>
               <Grid item xs={12} sm={5}>

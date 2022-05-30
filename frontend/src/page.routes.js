@@ -123,7 +123,6 @@ const pageRoutes = [
         key: "pricing-page",
         route: "/pages/pricing-page",
       },
-      { name: "RTL", key: "rtl", route: "/pages/rtl" },
       { name: "Widgets", key: "widgets", route: "/pages/widgets" },
       { name: "Charts", key: "charts", route: "/pages/charts" },
       {
@@ -374,12 +373,6 @@ const pageRoutes = [
     key: "applications",
     collapse: [
       {
-        name: "Kanban",
-        key: "kanban",
-        route: "/applications/kanban",
-        icon: "apps",
-      },
-      {
         name: "Wizard",
         key: "wizard",
         route: "/applications/wizard",
@@ -390,12 +383,6 @@ const pageRoutes = [
         key: "data-tables",
         route: "/applications/data-tables",
         icon: "table_view",
-      },
-      {
-        name: "Calendar",
-        key: "calendar",
-        route: "/applications/calendar",
-        icon: "today",
       },
       {
         name: "Analytics",

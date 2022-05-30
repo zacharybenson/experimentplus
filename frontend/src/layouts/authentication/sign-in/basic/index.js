@@ -32,6 +32,7 @@ import SuiButton from "components/SuiButton";
 import BasicLayout from "layouts/authentication/components/BasicLayout";
 import Socials from "layouts/authentication/components/Socials";
 import Separator from "layouts/authentication/components/Separator";
+import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 
 // Images
 import curved9 from "assets/images/curved-images/white-curved.jpeg";
@@ -46,7 +47,6 @@ function Basic() {
       title="Welcome!"
       description="Please sign in to get started."
       image={curved9}
-      
     >
       <Card>
         <SuiBox p={3} mb={1} textAlign="center">

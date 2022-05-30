@@ -52,11 +52,10 @@ import Charts from "layouts/pages/charts";
 import SweetAlerts from "layouts/pages/sweet-alerts";
 import Notifications from "layouts/pages/notifications";
 import PricingPage from "layouts/pages/pricing-page";
-import RTL from "layouts/pages/rtl";
-import Kanban from "layouts/applications/kanban";
+
 import Wizard from "layouts/applications/wizard";
 import DataTables from "layouts/applications/data-tables";
-import Calendar from "layouts/applications/calendar";
+
 import Analytics from "layouts/applications/analytics";
 import Overview from "layouts/ecommerce/overview";
 import NewProduct from "layouts/ecommerce/products/new-product";
@@ -206,7 +205,6 @@ const routes = [
         route: "/pages/pricing-page",
         component: <PricingPage />,
       },
-      { name: "RTL", key: "rtl", route: "/pages/rtl", component: <RTL /> },
       { name: "Widgets", key: "widgets", route: "/pages/widgets", component: <Widgets /> },
       { name: "Charts", key: "charts", route: "/pages/charts", component: <Charts /> },
       {
@@ -230,12 +228,6 @@ const routes = [
     icon: <SettingsIcon size="12px" />,
     collapse: [
       {
-        name: "Kanban",
-        key: "kanban",
-        route: "/applications/kanban",
-        component: <Kanban />,
-      },
-      {
         name: "Wizard",
         key: "wizard",
         route: "/applications/wizard",
@@ -246,12 +238,6 @@ const routes = [
         key: "data-tables",
         route: "/applications/data-tables",
         component: <DataTables />,
-      },
-      {
-        name: "Calendar",
-        key: "calendar",
-        route: "/applications/calendar",
-        component: <Calendar />,
       },
       {
         name: "Analytics",
@@ -597,11 +583,6 @@ const routes = [
         name: "Dropzone",
         key: "dropzone",
         href: "https://www.creative-tim.com/learning-lab/react/dropzone/soft-ui-dashboard/",
-      },
-      {
-        name: "Editor",
-        key: "editor",
-        href: "https://www.creative-tim.com/learning-lab/react/quill/soft-ui-dashboard/",
       },
       {
         name: "Input",

@@ -22,7 +22,6 @@ import Card from "@mui/material/Card";
 // Soft UI Dashboard PRO React components
 import SuiBox from "components/SuiBox";
 import SuiTypography from "components/SuiTypography";
-import SuiEditor from "components/SuiEditor";
 import SuiSelect from "components/SuiSelect";
 
 // NewProduct page components
@@ -73,7 +72,7 @@ function ProductInfo() {
                   </SuiTypography>
                 </SuiTypography>
               </SuiBox>
-              <SuiEditor value={editorValue} onChange={setEditorValue} />
+             
             </Grid>
             <Grid item xs={12} sm={6}>
               <SuiBox mb={3}>
