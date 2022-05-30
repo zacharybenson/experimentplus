@@ -24,10 +24,10 @@ COPY ./backend/scripts/ /app/
 WORKDIR /app/frontend
 
 COPY ./frontend/package.json /app/frontend/
-RUN npm install
+RUN npm install peer-deps
 
 # Add the rest of the code
-COPY ./frontend ./frontend/yarn.lock  /app/frontend
+COPY ./frontend /app/frontend
 
 # Build react static files
 RUN npm run build
