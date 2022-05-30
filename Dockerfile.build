@@ -24,6 +24,7 @@ COPY ./backend/scripts/ /app/
 WORKDIR /app/frontend
 
 COPY ./frontend/package.json /app/frontend/
+RUN npm install
 RUN npm install --legacy-peer-deps
 
 # Add the rest of the code
