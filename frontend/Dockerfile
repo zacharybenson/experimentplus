@@ -11,7 +11,7 @@ RUN apk add --no-cache --virtual .gyp \
         python \
         make \
         g++ \
-    && npm install \
+    && npm install --legacy-peer-deps \
     && apk del .gyp
 
 
