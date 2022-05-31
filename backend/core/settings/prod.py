@@ -13,7 +13,7 @@ ROOT_DIR = BASE_DIR.parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # add heroku app url or create env var with url
-ALLOWED_HOSTS = [os.environ.get("PRODUCTION_HOST")]
+ALLOWED_HOSTS = [os.environ.get("PRODUCTION_HOST"), 'www.experimentplus.com']
 
 # debug has to be false in production
 DEBUG = False
