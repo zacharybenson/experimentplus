@@ -25,7 +25,7 @@ RUN npm run build
 WORKDIR /app/frontend/build
 
 #RUN mkdir root && mv *.ico *.json root
-RUN cd build && mkdir root && mv *.ico *.json root
+RUN mkdir root && mv *.json root
 
 # Collect static files
 RUN mkdir /app/backend/staticfiles
